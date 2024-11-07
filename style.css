@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.6;
+    font-family: Arial, sans-sarif;
+}
+nav{
+    background-color: #383838;
+    color: #ffffff;
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem;
+    top: 0%;
+    z-index: 1000;
+}
+.logo h3{
+    font-size: 1.6rem;
+    color:rgb(196, 165, 62);
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.nav-link{
+    list-style:none;
+    display:flex;
+}
+.nav-link li{
+margin: 0 1rem;
+}
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+}
+ .nav-link a:hover{
+    color: #ff6347; 
+}
+#profile{
+    background: radial-gradient(circle,rgba(238,174,202,1)0%,rgba(148,187,233,1)100%);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.profile-content h1{
+    font-size: 3rem;
+}
+.profile-content img{
+    max-width: 250px;
+    border-radius: 50%;
+}
+button{
+    background-color: #df750c;
+    color:rgb(71, 26, 216);
+    padding: 0.7em 1.5rem;
+    font-size: 1.1em;
+    cursor:pointer;
+    border:none;
+    transition: background 0.3s;
+}
+button:hover{
+    background-color: #f3f4f6;
+}
+.education-timeline{
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.education-card{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 06px 12px rgba(0,0,0,0,2);
+    background-color: #ffffff;
+    box-shadow: 0 0 100px black;
+}
+.education-section h2{
+    color: #666;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.education-card h3{
+    color:#555;
+    font-size: 22px;
+}
+.education-card p{
+    font-size: 16px;
+    color:#555;
+}
+.education-card ul{
+    margin-top: 8px;
+}
+.education-card ul li{
+    font-size: 15px;
+    color:#666;
+    padding: 4px 0;
+}
+.education-card strong{
+    color:#34270b;
+}
+.skill-education{
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px;
+}
+.skill-education h2{
+   font-size: 32px;
+   color: #007bff;
+   margin-bottom: 30px;
+}
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.skill-card p{
+    font-size: 18px;
+    color:  #333;
+    margin-bottom: 5px;
+}
+.progress-bar{
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.progress-fill{
+background-color: #007bff;
+height: 100%;
+width: 0;
+border-radius: 20px;
+animation: fillprogress .5s ease-in-out forwards;
+}
+@keyframes fillprogress{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: var(--width);
+        width: 90%;
+    }
+}  
+#project{
+    background-color: #f9f9f9;
+}
+#project h2{            
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+} 
+.group-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project-card{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project-image img {
+    width: 100% ;
+    hight: 100% ;
+    
+
+}
